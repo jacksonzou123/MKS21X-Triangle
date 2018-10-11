@@ -30,8 +30,24 @@ public class Triangle{
     return "Triangle: A" +Point.format(v1) + " B" + Point.format(v2) + " C" + Point.format(v3);
   }
 
+  public Point getVertex(int index) {
+    if (index == 1) {
+      return new Point(v1);
+    }
+    if (index == 2) {
+      return new Point(v2);
+    }
+    if (index == 3) {
+      return new Point(v3);
+    }
+    return new Point(0,0);
+  }
+
   public static void main(String[] args) {
     Triangle a = new Triangle(0,0,3,4,3,0);
     System.out.println(a);
+    System.out.println(a.getVertex(1));
+    System.out.println(a.getVertex(2));
+    System.out.println(a.getVertex(3));
   }
 }
