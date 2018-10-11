@@ -43,11 +43,16 @@ public class Triangle{
     return new Point(0,0);
   }
 
-  public static void main(String[] args) {
-    Triangle a = new Triangle(0,0,3,4,3,0);
-    System.out.println(a);
-    System.out.println(a.getVertex(1));
-    System.out.println(a.getVertex(2));
-    System.out.println(a.getVertex(3));
+  public void setVertex(int index, Point newP) {
+    if (index == 1) {
+      v1 = new Point(newP);
+    }
+    if (index == 2) {
+      v2 = new Point(newP);
+    }
+    if (index == 1) {
+      v3 = new Point(newP);
+    }
   }
+
 }
