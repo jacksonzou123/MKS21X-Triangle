@@ -26,4 +26,13 @@ public class Point{
   public double distanceTo(Point p){
     return Math.sqrt(Math.pow((this.getX()-p.getX()),2) + (Math.pow((this.getY()-p.getY()),2)));
   }
+
+  public String toString() {
+    return "Point:(" + this.x + "," + this.y + ")";
+  }
+
+  public static void main(String[] args) {
+    Point a = new Point(0,0);
+    System.out.println(a);
+  }
 }
