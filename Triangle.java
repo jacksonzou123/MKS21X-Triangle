@@ -26,8 +26,12 @@ public class Triangle{
     return Point.distance(v1,v2) + Point.distance(v2,v3) + Point.distance(v1,v3);
   }
 
+  public String toString() {
+    return "Triangle: A" +Point.format(v1) + " B" + Point.format(v2) + " C" + Point.format(v3);
+  }
+
   public static void main(String[] args) {
     Triangle a = new Triangle(0,0,3,4,3,0);
-    System.out.println(a.getPerimeter());
+    System.out.println(a);
   }
 }

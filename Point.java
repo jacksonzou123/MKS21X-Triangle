@@ -27,12 +27,11 @@ public class Point{
     return Math.sqrt(Math.pow((this.getX()-p.getX()),2) + (Math.pow((this.getY()-p.getY()),2)));
   }
 
-  public String toString() {
-    return "Point:(" + this.x + "," + this.y + ")";
+  public static String format(Point p) {
+    return "(" + p.x + "," + p.y + ")";
   }
 
-  public static void main(String[] args) {
-    Point a = new Point(0,0);
-    System.out.println(a);
+  public String toString() {
+    return "Point:" + format(this);
   }
 }
